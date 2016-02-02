@@ -8,7 +8,8 @@
 Hola mon! Mira la consola.
 
 <script>
-    (function () {
+    "use strict";
+    var Mymodule = (function () {
 
         var stateObj = { foo: "bar" };
         history.pushState(stateObj, "Bar", "bar.html");
