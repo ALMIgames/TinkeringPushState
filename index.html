@@ -8,10 +8,14 @@
 Hola mon! Mira la consola.
 
 <script>
-    var stateObj = { foo: "bar" };
-    history.pushState(stateObj, "Bar", "bar.html");
-    var stateObj = { foo: "barasd" };
-    history.pushState(stateObj, "Bar2", "bar.html");
+    (function () {
+
+        var stateObj = { foo: "bar" };
+        history.pushState(stateObj, "Bar", "bar.html");
+        var stateObj = { foo: "barasd" };
+        history.pushState(stateObj, "Bar2", "bar.html");
+
+    }());
 </script>
 
 </body>
